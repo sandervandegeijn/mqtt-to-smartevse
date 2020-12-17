@@ -14,3 +14,8 @@ Pin reference ESP32 -> MAX3485 module:
 MAX3485 -> SmartEVSE:
 * A -> A
 * B -> B
+
+Currently it exposes three functions over mqtt:
+* smartevse/start -> start charging (disable locking feature of SmartEVSE), payload does not matter
+* smartevse/stop -> stop charging (enable locking feature of SmartEVSE), payload does not matter
+* smartevse/current -> set current in amps (6A -> post 6 to this topic, integers only)
