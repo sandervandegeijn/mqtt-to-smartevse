@@ -9,7 +9,7 @@ Pin reference ESP32 -> MAX3485 module:
 * ESP32 GND -> MAX3485 GND
 * ESP32 TX2 -> MAX3485 TXD
 * ESP32 RX2 -> MAX3485 RXD
-* ESP32 GPIO4 -> MAX3485 DE/RE (connect these two pins together with some solder)
+* ESP32 GPIO4 -> MAX3485 DE/RE (connect these two pins together with some solder). This is used to switch between receiving and transmitting, RS485 is half duplex.
 
 MAX3485 -> SmartEVSE:
 * A -> A
